@@ -11,15 +11,13 @@ console.log(listaCognomi);
 // Funzione generi una coppia nome-cognome casuale per 10 volte e che stampi in pagina utilizzando il tag li
 function nomeCognomeRandom (nome, cognome) {
 
-    for (var i = 0; i < 10; i++) {
-        nomeCasuale = listaNomi[Math.floor(Math.random() * listaNomi.length)];
-        cognomeCasuale = listaCognomi[Math.floor(Math.random() * listaCognomi.length)];
-    }
+    nomeCasuale = listaNomi[Math.floor(Math.random() * listaNomi.length)];
+    cognomeCasuale = listaCognomi[Math.floor(Math.random() * listaCognomi.length)];
 
     return nomeCasuale + " " + cognomeCasuale;
 }
 
-var nomeInLista = nomeCognomeRandom(listaNomi, listaCognomi)
-console.log(nomeInLista);
-
-document.getElementById("lista-festa").innerHTML = "<li>" + nomeInLista + "</li>";
+for (var i = 0; i < 10; i++) {
+    var nomeInLista = nomeCognomeRandom(listaNomi, listaCognomi)
+    document.getElementById("lista-festa").innerHTML += "<li>" + nomeInLista + "</li>";
+}
