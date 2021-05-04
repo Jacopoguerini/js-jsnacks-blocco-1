@@ -18,6 +18,6 @@ function nomeCognomeRandom (nome, cognome) {
 }
 
 for (var i = 0; i < 10; i++) {
-    var nomeInLista = nomeCognomeRandom(listaNomi, listaCognomi)
-    document.getElementById("lista-festa").innerHTML += "<li>" + nomeInLista + "</li>";
+    var personaInLista = nomeCognomeRandom(listaNomi, listaCognomi)
+    document.getElementById("lista-festa").innerHTML += "<li>" + personaInLista + "</li>";
 }
