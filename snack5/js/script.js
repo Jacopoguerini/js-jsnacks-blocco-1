@@ -8,7 +8,7 @@ for (var i = 0; i < 6; i++) {
     var numeroUtente = parseInt(prompt("Inserisci un numero qui sotto:"));
     console.log(numeroUtente);
 
-    if (seDispari(numeroUtente)) {
+    if (seDispari(numeroUtente) == true) {
         numeri.push(numeroUtente);
     }
 }
